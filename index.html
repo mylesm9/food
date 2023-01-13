@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Foodie Web Site </title>
+          <link rel="stylesheet" href="main.css">
+          
+
+</head>
+<body>
+          <div class="overlay" id="overlay">
+                    <h3>Searching Now......</h3>
+          </div>
+          <!-- Top Header -->
+         <div class="hero-bg">
+                    <section class="top">
+                              <header>
+                                        <a href="#">Foodie</a>
+                              </header>
+
+                              <h1><span>The Ultimate </span>Foodie Experience</h1>
+
+                              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque laudantium quia inventore rerum commodi accusantium, magni temporibus dolores illum odit, praesentium dolor modi, voluptatibus pariatur sapiente animi voluptas ipsum incidunt.</p>
+
+                              <!-- Form Container -->
+
+                              <div class="form-container">
+                                        <form action=" ">
+                                                  <div class="form-left">
+                                                            <label for="city">Enter your City</label>
+                                                            <input type="text", name="city" id="city">
+                                                            <p>Example: "Bognor Regis </p> 
+                                                  </div>
+
+                                                  <input type="button"  value="Find your City" id="cta-button">
+                                        </form>
+                              </div>
+                    </section>
+         </div>
+                    <secttion class="authentic">
+                              <div class="right-col">
+                                        <h2>Authentic & Awesome</h2>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, dolores consequuntur non nobis adipisci nostrum nisi quas, tempora debitis incidunt excepturi ab quae consequatur dignissimos alias sapiente expedita dolore eius!</p>
+
+                              </div>
+                              <img src="images/hassleback_pots.jpg" alt="dinner plate">
+                    </secttion>
+        <script>
+                    var btn = document.getElementById('cta-btn');
+                    if (btn){
+                              btn.addEventListener('click', swapper, false);
+                    }
+                    let overlay = document.getElementById('overlay');
+
+                    btn.addEventListener('click', () => {
+                              overlay.style.display = 'grid';
+                              overlay.classList.add('animate-overlay');
+                    })
+
+        </script>                     
+</body>
+</html>
